@@ -1,0 +1,380 @@
+body{
+    margin: 0px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+}
+
+
+/*header*/
+header{
+    background-image: url(/photo/image__header.png);
+    height:500px;
+    background-size:100% 100%;
+}
+
+
+/* titre */
+.titreheader{
+    color: white;
+    text-align:center;
+    top: 200px;
+    margin: 0px;
+    padding: 0px;
+    position:relative;
+    font-size: 70px;
+}
+
+/* barre nav */
+
+nav ul li{
+    display: inline-block;
+    color: white;
+    font-size: 30px;
+    position: relative;
+    margin-right: 30px;
+    bottom:87px;
+}
+
+
+ul{
+    position:absolute;
+    right:30px;
+}
+
+nav{
+    width: 100%;
+    position:absolute;
+    display: flex;
+    padding: 0px;
+}
+
+
+/* logo header */
+header img{
+position:absolute;
+margin-left: 20px;
+margin-top: 20px;
+}
+
+
+
+
+
+/*  PAGE 1  */
+
+/* titre */
+h2{
+    color: black;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 50px;
+}
+
+
+/* <HR> */
+.traittitre1{
+    width: 30%;
+
+}
+
+
+/* <DIV> <p>x3 */
+.textetitre1{
+    font-size: 20px;
+    margin-left: 40px;
+    margin-right: 20px;
+}
+
+
+/* arriere plan gris */
+#arriereplan1{
+    background-color:#f2f2f2;
+    margin: auto;
+    padding: 30px;
+}
+
+
+/* H3 */
+.soustitre1{
+    text-align: center;
+    font-size: 20px;
+}
+
+
+
+
+/* PAGE 2 */
+
+/* page de fond gris */
+#pageendessousnosevenement{
+    background-color:#292627;
+    margin: 0px;
+    padding: 50px;
+}
+
+
+/* page fond noire */
+#pagedessusnosevenement{
+    background-color: black;
+}
+
+
+/* titre */
+div div h2{
+    color: white;
+}
+
+
+/* <HR> */
+.traittitre2{
+    width: 25%;
+    position: relative;
+    bottom: 10px;
+}
+
+
+/* H3 */
+.soustitre2{
+    text-align: center;
+    color: white;
+    margin-bottom:0;
+    margin-top: 35Px;
+    padding-bottom: 40px;
+}
+
+
+/* <DIV> imgx4 */
+.IIIIimage{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.IIIIimage>*{
+    width: 50%;
+}
+
+label, #toggle{
+    display: none;
+}
+
+
+
+
+/* PAGE 3 */
+
+/* toutes les images (4) */
+.image__article{
+    width: 50%;
+    display: flex;
+
+}
+
+
+/* <DIV> 1er colonne */
+.Iercolonne{
+    display: flex;
+    flex-wrap:nowrap;
+}
+
+
+/* <DIV> eme colonne */
+.IIemecolonne{
+    background-color: #292627;
+    display: flex;
+    flex-wrap:nowrap;
+    flex-direction:row-reverse;
+}
+
+
+/* <DIV> 1er colonne */
+.IIIemecolonne{
+    display: flex;
+    flex-wrap:nowrap
+}
+
+
+/* titre 1er et 3eme colone */
+div div div h4{
+    position: relative;
+    top: 20px;
+    text-align: center;
+    font-size: 25px;
+}
+
+
+/* les 3 paragraphe */
+.parapageIII{
+    margin:25px;
+    text-align: center;
+    position: relative;
+    top: 20px;
+}
+
+
+/* <HR> pour les 3 colonne */
+.lignetitrepageIII{
+width:50%;
+position:relative;
+top: 20px;
+}
+
+
+/* <P> colonne 2 */
+#paracolonneII{
+    color: white;
+}
+
+
+/* tittre colonne 2*/
+#titrecolonneII{
+    color: white;
+}
+
+
+/* <DIV> ( titre + <hr> + <p> ) */
+.titretexte{
+    top: 90px;
+    padding: 5rem;
+}
+
+
+
+
+
+
+/* bas de page */
+
+/* <DIV> (logox3) */
+.logobasdepage{
+    background-color: #292627;
+    
+}
+
+/* logo */
+.logo{
+    width: 7%; 
+    left:600px;
+    position: relative;
+}
+
+
+
+
+
+
+
+/* respansive*/
+
+@media screen and (min-width:390px)and (min-height:844px){
+    
+    .image__article{
+        width: 100%;
+        height: 100%;
+    }
+
+    .Iercolonne{
+        display: flex;
+        flex-direction: column ;
+    }
+    
+    .IIemecolonne{
+        display: flex;
+        flex-direction: column ;
+    }
+    
+    .IIIemecolonne{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .parapageIII{
+        font-size: 40px;
+    }
+        
+    h2{
+        font-size:80px ;
+    
+    }
+        
+    .soustitre1{
+        font-size:15px;
+        margin-bottom: 40Px;
+    }
+
+    .soustitre2{
+        margin-top: 40px;
+    }
+        
+    #soustitre2{
+        font-size:13px;
+        margin-bottom: 0;
+        padding-bottom: 20Px;
+    }
+        
+    div div div h4{
+        font-size: 70px;
+    }
+        
+    h4{
+        position: relative;
+        margin-top:0px;
+        margin-bottom: 5%;
+    } 
+
+    .logo{
+        position: relative;
+        width: 150px;
+        left: 265px;
+    }
+
+    .textetitre1{
+        text-align: center;
+    }
+
+    h3{
+        font-size: 12px;
+    }
+
+    .soustitre1{
+        font-size:12px ;
+    }
+
+    label{
+        display: flex;
+        color: white;
+        width: 40px;
+        font-size: 90px;
+        cursor: pointer;
+        position: relative;
+        margin: 0px;
+        left: 850px;
+        bottom:100px;
+    }
+
+    #toggle:checked+.hamburger{
+        display: flex;
+        padding: 0px;
+    }
+    nav .hamburger{
+        display: none;
+        flex-direction: column;
+        background-color: blueviolet;
+        position: absolute;
+        z-index: 2;
+        width: 15%;
+
+    }
+    nav .hamburger a{
+        width: 100%;
+        padding: 10px 0 10px 0;
+    }
+
+    .categoriehamburger{
+        position: relative;
+        top:80px;
+        text-align: center;
+    }
+
+    nav ul li{
+        margin: 0;
+    }
+}
